@@ -1,0 +1,25 @@
+#!/bin/bash
+
+export KEY_DIR=$1
+
+export PAYER_KEYFILE=$KEY_DIR/LGNDSCoQfZZDZDBtVLgXvmJpqzRjRBcXSxwkSZjp3wN.json
+export LUCRA_ATA="GP1rvGnZHumU2aJFaQ8CcACgp1jR41vefa6bAuBsKG8T"
+export BOND_TREASURY_LUCRA_SOURCE_ACCOUNT="9DEas4bSVRaVFfCgK3UvVNC8QfbdvvcvrxoviBsjrczE"
+
+export ALT_PAYER_KEYFILE=$KEY_DIR/LG8jNzPqUxKFQ34wRPHGrsE1gynwd1UHUkjprNX1QAh.json
+export ALT_LUCRA_ATA="45VUVw78JZW6Ddu6SVkNjh1ryYpb71Hhse6W7EovNg5x"
+
+export SABER_LP_TOKEN_ACCOUNT="DNz7pgLfTchrQo8BmgJ16T5BD8LQjx9L8bPBKhAXrenf"
+
+export BASE_MINT="Cihwu2vJS1aC47qqDbeb87yrA54XxvRFJXRQ682S9rem"
+export QUOTE_MINT="USDFGfo8RPPUDR5GGB9kRHAYi6cxrbx9NmpXGkpqBsw"
+export LP_MINT="uf4MT2Zg656Mju29KKd9PMCYwweqqsdtJrKrowyNUvP"
+
+export POOL_STATE_ACCOUNT="9yDJwRwUF34kiDDsLcsYUZJbbPKg82BQYH55S6Rumwtu"
+export TREASURY_PYTH_ADDRESS="J83w4HKfqxwcq3BEMMkPFSppX3gqekLyLJBexebFVkix"
+export BASE_VAULT="Ec7CGJgYAzSpEXU5mrLAfqABViuUUxyngknRfrYGbAMU"
+export BASE_PYTH_ADDRESS="5SSkXsEKQepHHAewytPVwdej4epN1nxgLVM84L4KXgy7"
+export QUOTE_VAULT="77ahtH5tnydZT61W6KzRekBjF8DLLz9wa8q9ADU3AuJn"
+export QUOTE_PYTH_ADDRESS="5SSkXsEKQepHHAewytPVwdej4epN1nxgLVM84L4KXgy7"
+
+yarn test:integration --testPathPattern bondSystems/saber.test.ts --detectOpenHandles

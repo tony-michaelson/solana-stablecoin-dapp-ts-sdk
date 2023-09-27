@@ -1,0 +1,22 @@
+#!/bin/bash
+
+export KEY_DIR=$1
+
+export PAYER_KEYFILE=$KEY_DIR/LGNDSCoQfZZDZDBtVLgXvmJpqzRjRBcXSxwkSZjp3wN.json
+export LUCRA_ATA="2y822z2nxGdx2ir9inTH4y9oa6uSuvUzDAav418dEcUY"
+export BOND_TREASURY_LUCRA_SOURCE_ACCOUNT="7xhfnZSsWFqtJDSvjRe4KUFN2kDjm3n1Nc4UZ79yCzxG"
+
+export ALT_PAYER_KEYFILE=$KEY_DIR/LG8jNzPqUxKFQ34wRPHGrsE1gynwd1UHUkjprNX1QAh.json
+export ALT_LUCRA_ATA="3kDkpKa38oYKwkFwmJ7dcf6g3SVdUQyTEiqnagxyWC56"
+
+export ORCA_LP_TOKEN_ACCOUNT="CYcUUQimjC9XT1NXpT9ohm7fChrAidCPKqzmx5Du1jia"
+
+export BASE_MINT="D96AEwfFTJ7EJZJr8mtELyk2JykQZJMfxEM3CFN5CKVt"
+export QUOTE_MINT="So11111111111111111111111111111111111111112"
+export LP_MINT="AHdnXA9HvGLkH5gBCFbyMEjC8SR67Nwkd3gY37jrHZ6t"
+
+export POOL_STATE_ACCOUNT="AxgaLvZj9smQeWvzu52gKgmkEGsG45YgXLQXWUqJcCUq"
+export BASE_VAULT="44FRoioxQoXR2ffhKMx6HExgVnvRaXFeyeLNmwuXektt"
+export QUOTE_VAULT="EHT8wtZnQ37VyN1jKnZtjRBpReoLoLAPTty67BKCWTkJ"
+
+yarn test:integration --testPathPattern bondSystems/orca.test.ts --detectOpenHandles

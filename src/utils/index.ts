@@ -1,0 +1,1 @@
+export { generateStakeAcctKeypairs } from './account'
